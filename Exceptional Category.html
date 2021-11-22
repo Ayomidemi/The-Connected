@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>The Connected</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+       * {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #fcfeff;
+}
+nav {
+   
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        margin: 0 px;
+    }
+    
+    .ugl {
+        list-style: none;
+        display: flex;
+        padding: 20px;
+    }
+    .txt {
+  color: #2a5cf5;
+}
+.fa {
+  padding: 0px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Style the content */
+.content {
+  padding: 5px;
+  text-align: center;
+  color: #3b3f47;
+  background: #fcfeff;
+}
+.searchbox {
+    text-align: center;
+}
+.searchbox button {   
+padding: 17px;  
+margin-top: 10px;  
+margin-left: 4px;  
+background: #4287f5;  
+font-size: 12px;  
+border: 2px blue;
+cursor: pointer;
+color: white;
+width: 15%;
+}
+.searchbox button:hover {  
+background: blue;  
+}
+input[type=text] {  
+padding: 17px;  
+margin-top: 35px;  
+font-size: 12px;  
+border: 2px #b3bbc7;
+border-width: 2px;
+background-color: #edf0f5;
+width: 65%;
+text-align: center;
+}  
+.vcat {
+    text-align: center;
+    padding: 30px;
+}
+  .active {
+  background-color: #2a5cf5;
+  padding: 10px;
+  border-radius: 5px;
+}
+.footer {
+ display: flex;
+ flex-wrap: wrap;
+ padding: 30px;
+ color: #546d85;
+ background-color: #edf4ff;
+}
+.footer > *{
+  flex: 1 100%;
+}
+.footer-left {
+ margin-right: 1.25em;
+ margin-bottom: 2em;
+ font-size: 13px;
+ padding-left: 70px;
+}
+h2 {
+ font-weight: 600;
+ font-size: 15px;
+}
+.footer ul{
+ list-style: none;
+}
+.footer li {
+ line-height: 2em;
+}
+.footer a {
+ text-decoration: none;
+}
+.footer-right {
+ display: -webkit-flex;
+ display: -moz-flex;
+ display: -ms-flex;
+ display: -o-flex;
+ display: flex;
+ flex-flow: row wrap; 
+ font-size: 13px;
+ padding-right: 50px;
+}
+.footer-right > *{
+ flex: 1 50%;
+ margin-right: 1.25em;
+}
+
+.footer-left p{
+ padding-right: 70px;
+ color: #546d85;
+}
+.b-footer {
+    text-align: center;
+    color: #546d85;
+    padding-top: 50px;
+ }
+ @media screen and (min-width: 600px) {
+ .footer-right > *{
+  flex: 1;
+ }
+ .features {
+  flex-grow: 2;
+ }
+ .footer-left {
+  flex: 1 0px;
+ }
+ .footer-right {
+  flex: 2 0px;
+ }
+}
+@media (max-width: 600px) {
+  .footer {
+   padding: 15px;
+  }
+ }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+                 <div class="ugl">
+                            <li><img src="./Desktop/Images/The connected logo.png" width="40px" height="40px"></li>
+                        <li><b>The Connected</b></a></li>
+                    </div>
+                    
+                    <div class="ugl">
+                        <!-- Add font awesome icons -->
+                        <div class="fonsiz"><a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>     
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                    
+                    </div>
+        </nav>
+         </header>
+        
+         <div class="searchbox">
+           <form>
+               <input type="text" placeholder="Nominee name, Nominee number, Nominee category">
+                <button type="submit">Search</button>
+            </form>
+         </div>
+
+         <div class="vcat">
+            <h1>Exceptional Data Scientist Category</h1>
+            <p><b>Increase your voting power</b>
+                    <a class="txt" href="increase voting power.html">Here</a></p>
+                    <p> Voting is FREE and FAIR</p>
+        </div>
+
+        <div class="vcat">
+            <div class="row row-cols-1 row-cols-md-5">
+                <div class="col mb-4">
+                  <div class="card h-100">
+                    <img src="./Desktop/Images/pro 3.jpg" class="card-img-center" alt="card image">
+                    <div class="card-body">
+                      <h5 class="card-title"><b>Name Surname</b></h5>
+                      <a href="vote.html" class="btn btn-primary">Vote</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                      <img src="./Desktop/Images/pro 6.jpg" class="card-img-center" alt="card image">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Name Surname</b></h5>
+                        <a href="vote.html" class="btn btn-primary">Vote</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img src="./Desktop/Images/pro 3.jpg" class="card-img-center" alt="card image">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Name Surname</b></h5>
+                        <a href="vote.html" class="btn btn-primary">Vote</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img src="./Desktop/Images/pro 6.jpg" class="card-img-center" alt="card image">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Name Surname</b></h5>
+                        <a href="vote.html" class="btn btn-primary">Vote</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img src="./Desktop/Images/pro 3.jpg" class="card-img-center" alt="card image">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Name Surname</b></h5>
+                        <a href="vote.html" class="btn btn-primary">Vote</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img src="./Desktop/Images/pro 6.jpg" class="card-img-center" alt="card image">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Name Surname</b></h5>
+                        <a href="vote.html" class="btn btn-primary">Vote</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img src="./Desktop/Images/pro 3.jpg" class="card-img-center" alt="card image">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Name Surname</b></h5>
+                        <a href="vote.html" class="btn btn-primary">Vote</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img src="./Desktop/Images/pro 6.jpg" class="card-img-center" alt="card image">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Name Surname</b></h5>
+                        <a href="vote.html" class="btn btn-primary">Vote</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img src="./Desktop/Images/pro 3.jpg" class="card-img-center" alt="card image">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Name Surname</b></h5>
+                        <a href="vote.html" class="btn btn-primary">Vote</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img src="./Desktop/Images/pro 6.jpg" class="card-img-center" alt="card image">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Name Surname</b></h5>
+                        <a href="vote.html" class="btn btn-primary">Vote</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img src="./Desktop/Images/pro 3.jpg" class="card-img-center" alt="card image">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Name Surname</b></h5>
+                        <a href="vote.html" class="btn btn-primary">Vote</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img src="./Desktop/Images/pro 6.jpg" class="card-img-center" alt="card image">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Name Surname</b></h5>
+                        <a href="vote.html" class="btn btn-primary">Vote</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img src="./Desktop/Images/pro 3.jpg" class="card-img-center" alt="card image">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Name Surname</b></h5>
+                        <a href="vote.html" class="btn btn-primary">Vote</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img src="./Desktop/Images/pro 6.jpg" class="card-img-center" alt="card image">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Name Surname</b></h5>
+                        <a href="vote.html" class="btn btn-primary">Vote</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img src="./Desktop/Images/pro 3.jpg" class="card-img-center" alt="card image">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Name Surname</b></h5>
+                        <a href="vote.html" class="btn btn-primary">Vote</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+
+        <footer class= "footer">
+            <div class="footer-left">
+             <h3 class="txt"><b>The Connected.</b></h3>
+             <p> Promising talent is an individual with less than five years experience in Nigeria
+               technology ecosystem. Such individual are well recognized in their field 
+             for impacting with their skills.</p>
+         
+             <h6>Support Line
+               <p><a class="txt" href="#">+2348148918920</a></p></h6>
+            </div>
+                  <ul class="footer-right">
+                     <li>
+                       <h6>OUR TARGET</h>
+                          <ul class="box">
+                             <li><a href="#">Awareness</a></li>
+                             <li><a href="#">Competition</a></li>
+                             <li><a href="#">Entertainment</a></li>
+                             <li><a href="#">Recognition</a></li>
+                          </ul>
+                     </li>
+                        
+                      <li class="feautures">
+                       <h6>OUR SOCIALS</h6>
+                          <ul class="box">
+                             <li><a class="txt" href="#">LinkedIn</a></li>
+                             <li><a class="txt" href="#">Facebook</a></li>
+                             <li><a class="txt" href="#">Twitter</a></li>
+                             <li><a class="txt" href="#">Instagram</a></li>
+                             <li><a class="txt" href="#">YouTube</a></li>
+                          </ul>
+                     </li>
+                        
+                        <li>
+                       <h6>Promoting Technology In Africa</h6>
+                        <p> Promising talent is an individual with less than five years experience in Nigeria
+                           technology ecosystem. Such individual are well recognized in their field 
+                         for impacting with their skills.</p>
+                         <h6>For partnership and enquiries
+                            <br/><a class="txt" href="The Conected">Theconnected@techtrend.africa</a></h6>
+                      </li>
+                  </ul>
+                        
+                     <div class="b-footer">
+                        <p> &copy; 2021 Techtrend Africa - All rights reserved</p></div>
+          </footer>
+</body>
+</html>

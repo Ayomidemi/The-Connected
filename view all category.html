@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>The Connected</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+<style>
+         * {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #fcfeff;
+}
+nav {
+   
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        margin: 0px;
+    }
+    
+    .ugl {
+        list-style: none;
+        display: flex;
+        padding: 20px;
+    }
+    .txt {
+  color: #2a5cf5;
+}
+.fa {
+  padding: 0px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Style the content */
+.content {
+  padding: 5px;
+  text-align: center;
+  color: #3b3f47;
+  background: #fcfeff;
+}
+.searchbox {
+    text-align: center;
+    position: relative;
+}
+.searchbox button {   
+padding: 17px;  
+margin-top: 10px;  
+margin-left: 4px;  
+background: #4287f5;  
+font-size: 12px;  
+border: 2px blue;
+cursor: pointer;
+color: white;
+width: inherit;
+}
+.searchbox button:hover {  
+background: blue;  
+}
+input[type=text] {  
+padding: 17px;  
+margin-top: 35px;  
+font-size: 12px;  
+border: 2px #b3bbc7;
+border-width: 2px;
+background-color: #edf0f5;
+width: 50%;
+text-align: center;
+position: relative;
+}  
+.vcat {
+    text-align: center;
+    padding: 20px;
+}
+span {
+    display: inline-block;
+    width: 140px;
+    height: 120px;
+    margin: 6px;
+    background-color: #e6ecf0;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+  }
+
+.btn {
+   border: none;
+   outline: none;
+   margin-bottom: 20px;
+   padding: 12px 16px;
+   background-color: #e1e6ed;
+   cursor: pointer;
+   text-align: center;
+   width: inherit;
+}
+.btn:hover {
+   background-color: #edf4ff;
+}
+.show {
+   display: block;
+}
+
+.footer {
+ display: flex;
+ flex-wrap: wrap;
+ padding: 30px;
+ color: #546d85;
+ background-color: #edf4ff;
+}
+.footer > *{
+  flex: 1 100%;
+}
+.footer-left {
+ margin-right: 1.25em;
+ margin-bottom: 2em;
+ font-size: 13px;
+ padding-left: 40px;
+}
+h2 {
+ font-weight: 600;
+ font-size: 15px;
+}
+.footer ul{
+ list-style: none;
+}
+.footer li {
+ line-height: 2em;
+}
+.footer a {
+ text-decoration: none;
+}
+.footer-right {
+ display: -webkit-flex;
+ display: -moz-flex;
+ display: -ms-flex;
+ display: -o-flex;
+ display: flex;
+ flex-flow: row wrap; 
+ font-size: 13px;
+ padding-right: 50px;
+}
+.footer-right > *{
+ flex: 1 50%;
+ margin-right: 1.25em;
+}
+
+.footer-left p{
+ padding-right: 50px;
+ color: #546d85;
+}
+.b-footer {
+    text-align: center;
+    color: #546d85;
+    padding-top: 50px;
+ }
+ @media screen and (min-width: 600px) {
+ .footer-right > *{
+  flex: 1;
+ }
+ .features {
+  flex-grow: 2;
+ }
+ .footer-left {
+  flex: 1 0px;
+ }
+ .footer-right {
+  flex: 2 0px;
+ }
+}
+@media (max-width: 600px) {
+  .footer {
+   padding: 15px;
+  }
+ }
+ .active {
+  background-color: #2a5cf5;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 10px;
+  right: 45px;
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+         <div class="ugl">
+                    <li><img src="./Desktop/Images/The connected logo.png" width="40px" height="40px"></li>
+                <li><b>The Connected.</b></a></li>
+            </div>
+            
+            <div class="ugl">
+                <!-- Add font awesome icons -->
+                <div class="fonsiz"><a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>    
+                <a href="#"><i class="fa fa-youtube-play"></i></a> 
+            </div>
+</nav>
+ </header>
+  
+ <div class="searchbox">
+   <form>
+       <input type="text" placeholder="Nominee name, Nominee number, Nominee category...">
+        <button type="submit">Search</button>
+    </form>
+ </div>
+
+<div class="vcat">
+ <h1>Voting Category</h1></div>
+
+   <div class="vcat">
+      <button class="btn" style="background: #192f57; color: white;" onclick="filterSelection('all')">Exceptional Category</button>
+      <button class="btn" onclick="filterSelection('all')"> Promising Category</button>
+    </div>
+
+  <div class="vcat">
+  <span class="rounded "><p>Product Designer</p>
+     <p><a href="Exceptional Category.html" class="active">View</a></p>
+  </span>
+  <span class="rounded"><p>Social Media Manager</p>
+   <p><a href="Exceptional Category.html" class="active">View</a></p>
+</span>
+  <span class="rounded"><p>Product Manager</p>
+   <p><a href="Exceptional Category.html" class="active">View</a></p>
+</span>
+   <span class="rounded"><p>Visual Designer</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Tech HR Personnel</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Support Engineer</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+  
+  <br/>
+
+  <span class="rounded"><p>3D Animator</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Digital Marketer</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Cybersecurity Expert</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>GIS Specialist</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Frontend Developer</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Data Analyst</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+
+  <br/>
+  <span class="rounded"><p>Backend Developer</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Microsoft 3D Expert</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Fintech Starup</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Health-Care Starup</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>LinkedIn Influencer</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Mobile Developer</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+
+
+<br/>
+<span class="rounded"><p>C-Suite Personnel</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Content Writer</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Investment Analyst</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>GIS Analyst</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>DevOps Expert </p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Game Developer</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+
+<br/>
+<span class="rounded"><p>IT Support Engineer</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Start-Up Founder</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Technical Accountant</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Technical Lawyer</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>AI Tech Start-Up</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>E-Commerce Start-Up</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+
+  
+<br/>
+<span class="rounded"><p>Technical Executive Marketer</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Automation & Robotics Expert</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Quality Assurance Specialist</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Customer Success Representative</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Technical Executive Marketer</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Data Scientist & Engineer</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+
+<br/>
+<span class="rounded"><p>Cloud Architect & Engineer</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Product Growth Expert</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Legal Tech Starup Of The Year</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Tech Trainer Of The Year</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>EduTech Start-Up Of The Year</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>InsurTech Start-Up Of The Year</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+
+<br/>
+<span class="rounded"><p>PropTech Start-Up Of The Year</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>AgriTech Start-Up Of The Year</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Enterprise Company Of The Year</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Design Company Of The Year</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Energy Tech Start-Up of The Year </p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>Marketing Company Of The Year</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+
+<br/>
+<span class="rounded"><p>Logistics Company Of The Year</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+<span class="rounded"><p>IT Company Of The Year</p>
+   <p><a href="#" class="active">View</a></p>
+</span>
+
+
+  </div>
+
+
+  <footer class= "footer">
+   <div class="footer-left">
+    <h3 class="txt"><b>The Connected.</b></h3>
+    <p> Promising talent is an individual with less than five years experience in Nigeria
+      technology ecosystem. Such individual are well recognized in their field 
+    for impacting with their skills.</p>
+
+    <h6>Support Line
+      <p><a class="txt" href="#">+2348148918920</a></p></h6>
+   </div>
+         <ul class="footer-right">
+            <li>
+              <h6>OUR TARGET</h>
+                 <ul class="box">
+                    <li><a href="#">Awareness</a></li>
+                    <li><a href="#">Competition</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                    <li><a href="#">Recognition</a></li>
+                 </ul>
+            </li>
+               
+             <li class="feautures">
+              <h6">OUR SOCIALS</h6>
+                 <ul class="box">
+                    <li><a class="txt" href="#">LinkedIn</a></li>
+                    <li><a class="txt" href="#">Facebook</a></li>
+                    <li><a class="txt" href="#">Twitter</a></li>
+                    <li><a class="txt" href="#">Instagram</a></li>
+                    <li><a class="txt" href="#">YouTube</a></li>
+                 </ul>
+            </li>
+               
+               <li>
+              <h6>Promoting Technology In Africa</h6>
+               <p> Promising talent is an individual with less than five years experience in Nigeria
+                  technology ecosystem. Such individual are well recognized in their field 
+                for impacting with their skills.</p>
+                <h6>For partnership and enquiries
+                   <br/><a class="txt" href="The Conected">Theconnected@techtrend.africa</a></h6>
+             </li>
+         </ul>
+               
+            <div class="b-footer">
+               <p> &copy; 2021 Techtrend Africa - All rights reserved</p></div>
+ </footer>
+ 
+ <script>
+   filterSelection("all")
+   function filterSelection(c) {
+     var x, i;
+     x = document.getElementsByClassName("span");
+     if (c == "all") c = "";
+     for (i = 0; i < x.length; i++) {
+       theConnectedRemoveClass(x[i], "show");
+       if (x[i].className.indexOf(c) > -1) theConnectedAddClass(x[i], "show");
+     }
+   }
+   function theConnectedAddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function theConnectedRemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+</script>   
+</body>
+</html>

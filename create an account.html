@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>The Connected</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: white;
+}
+header{
+ text-align: center;
+ font-size: 32px;
+ color: #3e4a54;
+ padding: 20px;
+ background: #edf4ff;
+}
+.txt {
+  color: #2a5cf5;
+}
+.head {
+    text-align: center;
+    color: #58646e;
+    padding: 10px;
+    font-size: 15px;
+}
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0px 22px 0px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+.hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.signupbtn {
+  background-color: #2a5cf5;
+  color: white;
+  padding: 16px 20px;
+  margin: 15px 0px 40px 0px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 15px;
+}
+
+.signupbtn:hover {
+  opacity: 1;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+h3 {
+        font-family: sans-serif;
+        margin: 30px auto;
+        text-align: center;
+        color: #2a5cf5;
+        font-size: 20px;
+        max-width: 80%;
+        position: relative;
+         }
+         h3:before {
+        content: "";
+        display: block;
+        width: 40%;
+        height: 2px;
+        background: #2a5cf5;
+        left: 0;
+        top: 50%;
+        position: absolute;
+      }
+      
+      h3:after {
+        content: "";
+        display: block;
+        width: 40%;
+        height: 2px;
+        background: #2a5cf5;
+        right: 0;
+        top: 50%;
+        position: absolute;
+      }
+     
+      .social-btn button.facebook-btn, .social-btn button.google-btn {
+    width: 100%;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.social-btn button.facebook-btn{
+  background-color: #2a5cf5;
+  color: #f1f1f1;
+}
+.social-btn button.google-btn{
+  background-color: red;
+  color: #f1f1f1 ;
+}
+.social-btn {
+    border: none;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+.social-btn button i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+.social-btn button.facebook-btn, .social-btn button.google-btn {
+    font-size: 27px;
+} 
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+a {
+        text-decoration: none;
+        color: white;
+        margin: 0px;
+    }
+    span.psw {
+  float: right;
+  padding-top: 20px;
+}
+
+/* The popup-form hidden by default */
+.popup .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  z-index: 1;
+  display: none;
+}
+.popup .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  background: #fff;
+  width: 450px;
+  height: 220px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.popup .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.popup.active .overlay {
+  display: block;
+}
+.popup.active .content {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%,-50%) scale(1);
+}
+
+</style>
+</head>
+
+<body>
+    <header>
+        Let's get started shall we?
+      
+    </header>
+
+<div class="head">
+    <h4>Time to vote your favorite techie, let's make this amazing.
+        <br/> Already have an account? <a class="txt" href="log in.html">Log in</a></h4>
+</div>
+
+<form action="/action_page.php">
+    <div class="container">
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+      <label for="phone"><b>Phone number</b></label>
+      <input type="text" placeholder="Phone Number" name="phone" id="phone" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Password" name="password" id="psw" required>
+
+      <label for="sex"><b>Sex</b></label><select id="sex" name="sex">
+      <option value="female">Female</option>
+      <option value="male">Male</option>
+    </select>
+  
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+      <hr>
+      <p>By creating an account you agree to our <a class="txt" href="Terms of Use.html">Terms of Use & Privacy Policy</a>.</p>
+  
+      <div class="container mt-3">
+        <button type="button" class="signupbtn" data-bs-toggle="modal" data-bs-target="#myModal">
+          Sign Up
+        </button>
+      </div>
+      
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+      
+        <!-- Modal Header -->
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body" style="text-align:center;">
+              <p>A confirmation code has been sent to your mail.</p>
+              <p>Click on the link in your mail to verify your account.</p>
+              <p><a class="txt" href="#">Go to mail</a></p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    <h3 class="h3">or</h3>
+
+    <div class="social-btn">
+      <button type="submit" class="facebook-btn"><i class="fa fa-facebook"></i> 
+        <a href="#">Login with Facebook</a></button>
+      <button type="submit" class="google-btn"><i class="fa fa-google" aria-hidden="true"></i> 
+       <a href="#"> Login with Google</a></button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
