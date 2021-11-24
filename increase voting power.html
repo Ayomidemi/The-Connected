@@ -35,143 +35,187 @@ body {
          padding: 16px;
          background-color: white;
        }
-.socials {
+nav {
+display: flex;
+justify-content: space-between;
+background: #edf4ff;
+padding: 5px;
+color: black;
+}
+nav.item {
+    float: right;
+}
+ul {
     text-align: center;
+    justify-content: right;
 }
-       .socials a{
- background: #d5e9f2;
- width: 150px;
- height: 150px;
- display: inline-block;
- margin-right: 15px;
- border-radius: 5px;
-}
-.socials a li{
- color: #5c676b;
- padding: 30px;
- font-size: 5px;
+li {
+    text-decoration: none;
+    color: #000;
+    margin: 0px;
+ }
+ a {
+     text-decoration: none;
+ }
+ .fa {
+ padding: 5px;
+ font-size: 20px;
+ width: 30px;
  text-align: center;
+ text-decoration: none;
+ margin-right: 15px;
+ color: black;
+ }
+ .fa:hover {
+ opacity: 0.7;
+ }
+ .txt {
+ color: #2a5cf5;
+ }
+/* Style the content */
+.content {
+padding: 5px;
+text-align: center;
+color: #3b3f47;
+background: #fcfeff;
 }
-.fa {
-        padding-top: 30px;
-        font-size: 50px;
-        width: 40px;
-        text-align: center;
-        text-decoration: none;
-        color: #1f2638;
-      }
-
-/* Add padding to containers */
-.container {
-         padding: 16px;
-         background-color: white;
-       }
-       
-       /* Full-width input fields */
-       input[type=text] {
-         width: 100%;
-         padding: 15px;
-         margin: 5px 0 22px 0;
-         display: inline-block;
-         border: none;
-         background: #f1f1f1;
-       }
-       input[type=text]:focus {
-        background-color: #ddd;
-        outline: none;
-      }
-      
-      /* Set a style for the submit button */
-      .submitbtn {
+.vcat {
+    text-align: center;
+    padding: 20px ;
+}
+/* Set a style for the submit button */
+.submitbtn {
         background-color: #2a5cf5;
         color: white;
-        padding: 16px 20px;
+        padding: 10px;
+        width: inherit;
         border: none;
+        border-radius: 5px;
         cursor: pointer;
-        width: 50%;
         opacity: 0.9;
-        font-size: 18px;
+        font-size: 15px;
       }
       .submitbtn:hover {
         opacity: 1;
       }
       
-      /* Set a grey background color and center the text of the "submit" section */
-      .loginin {
-        background-color: #f1f1f1;
-        text-align: center;
-      }
-.tail {
-  text-align: center;
-}
-.text {
-  color: #2a5cf5;
-}
     </style>
 </head>
 <body>
-    <header>
-        <h1>Increase Voting Power</h1>
-        <p><b>Each page you follow increses your voting power by two(2) votes.</b></p>
-    </header>
-
-    <div class="socials">
-        <a href="#"><i class="fa fa-linkedin-square"><p class="txt">Click to follow</p></i></a>
-        <a href="#"><i class="fa fa-twitter"><p class="txt">Click to follow</p></i></a>
-        <a href="#"><i class="fa fa-instagram"><p class="txt">Click to follow</p></i></a>
-        <a href="#"><i class="fa fa-facebook-official"><p class="txt">Click to follow</p></i></a>
-      
-     </div>
-
-     <form action="/action_page.php">
-      <div class="container">
-    
-        <label for="link"><b>LinkedIn Profile Link</b></label>
-        <input type="text" placeholder="Enter Link" name="link" id="link">
+  <nav class="navbar navbar-expand-sm bg-#edf4ff navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand"><img src="The connected logo.png" width="40px" height="40px"
+          class="d-inline-block align-top" alt="">
+         <b>The Connected.</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
   
-        <label for="link"><b>Instagram Profile Link</b></label>
-        <input type="text" placeholder="Enter Link" name="link" id="link">
-
-        <label for="link"><b>YouTube Profile Link</b></label>
-        <input type="text" placeholder="Enter Link" name="link" id="link">
-
-        <label for="link"><b>Facebook Profile Link</b></label>
-        <input type="text" placeholder="Enter Link" name="link" id="link">
-
-        <label for="link"><b>Twitter Profile Link</b></label>
-        <input type="text" placeholder="Enter Link" name="link" id="link">
-  
-       <div class="tail">
-         <p>Information given would be verified and if found inaccurate, votes will be nulified.</p>
-
-         <div class="container mt-3">
-          <button type="button" class="submitbtn" data-bs-toggle="modal" data-bs-target="#myModal">
-            Submit
-          </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-linkedin"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-youtube-play"></i></a>
+            </li>
+            
+          </ul>
         </div>
-        
-        <!-- The Modal -->
-        <div class="modal" id="myModal">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-        
-          <!-- Modal Header -->
-              <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-        
-              <!-- Modal body -->
-              <div class="modal-body" style="text-align:center;">
-                <p>Submission of fake information will make all your votes nullified.</p>
-                <p>Thank You!</p>
-                <p><a class="text" href="The Connected.html">Go to Homepage</a></p>
-              
-              </div>
-        
-             
+      </div>
+    </nav>
+
+<header>
+ <h1> Increase Voting Power</h1>
+ <p><b>Cheer your favorite Nominee to win the Award and a Gift Pack!</b></p>
+</header>
+
+
+  <div class="vcat">
+    <div class="row row-cols-1 row-cols-md-4">
+        <div class="col mb-4">
+          <div class="card h-100" style="background: #e7e6f2;" >
+            <div class="card-body">
+              <h4 class="card-title">10 votes</h4>
+          <h3 class="card-text"><b>N500</b></h3>
+          <div class="container mt-3" style="background: #e7e6f2;">
+            <button type="button" class="submitbtn" data-bs-toggle="modal" data-bs-target="#myModal">
+              Buy
+            </button>
+          </div>
             </div>
           </div>
         </div>
+        <div class="col mb-4">
+            <div class="card h-100" >
+              <div class="card-body">
+                <h4 class="card-title">25 votes</h4>
+            <h3 class="card-text"><b>N1000</b></h3>
+            <div class="container mt-3">
+              <button type="button" class="submitbtn" data-bs-toggle="modal" data-bs-target="#myModal">
+                Buy
+              </button>
+            </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">40 votes</h4>
+            <h3 class="card-text"><b>N1500</b></h3>
+            <div class="container mt-3">
+              <button type="button" class="submitbtn" data-bs-toggle="modal" data-bs-target="#myModal">
+                Buy
+              </button>
+            </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100" >
+              <div class="card-body">
+                <h4 class="card-title">60 votes</h4>
+            <h3 class="card-text"><b>N2000</b></h3>
+            <div class="container mt-3">
+              <button type="button" class="submitbtn" data-bs-toggle="modal" data-bs-target="#myModal">
+                Buy
+              </button>
+            </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
 
+  <!-- The Modal -->
+   <div class="modal" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+  
+    <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body" style="text-align:center;">
+          <p>You have successfully increased your voting power.</p>
+          <p>Go make your favorite candidate win!</p>
+          <p><a class="txt" href="profile page.html" style="font-size: 17px;">Go to Homepage</a></p>
+        
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
