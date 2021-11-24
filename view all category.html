@@ -22,38 +22,42 @@ body {
   background-color: #fcfeff;
 }
 nav {
-   
-        display: flex;
-        justify-content: space-between;
-        
-    }
-
-    a {
-        text-decoration: none;
-        color: #000;
-        margin: 0px;
-    }
-    
-    .ugl {
-        list-style: none;
-        display: flex;
-        padding: 20px;
-    }
-    .txt {
-  color: #2a5cf5;
+display: flex;
+justify-content: space-between;
+background: #edf4ff;
+padding: 5px;
+color: black;
 }
-.fa {
-  padding: 0px;
-  font-size: 20px;
-  width: 40px;
-  text-align: center;
-  text-decoration: none;
+nav.item {
+    float: right;
 }
-
-.fa:hover {
-    opacity: 0.7;
+ul {
+    text-align: center;
+    justify-content: right;
 }
-
+li {
+    text-decoration: none;
+    color: #000;
+    margin: 0px;
+ }
+ a {
+     text-decoration: none;
+ }
+ .fa {
+ padding: 5px;
+ font-size: 20px;
+ width: 30px;
+ text-align: center;
+ text-decoration: none;
+ margin-right: 15px;
+ color: black;
+ }
+ .fa:hover {
+ opacity: 0.7;
+ }
+ .txt {
+ color: #2a5cf5;
+ }
 /* Style the content */
 .content {
   padding: 5px;
@@ -61,35 +65,47 @@ nav {
   color: #3b3f47;
   background: #fcfeff;
 }
+input[type=text] {  
+padding: 17px 10px 17px 50px;  
+margin-top: 35px;  
+font-size: 15px;  
+border-style: none;
+border-width: 0px;
+background-color: #d3d9e3;
+width: 50%;
+text-align: left;
+border-radius: 5px;
+}  
 .searchbox {
     text-align: center;
-    position: relative;
 }
 .searchbox button {   
 padding: 17px;  
-margin-top: 10px;  
-margin-left: 4px;  
+margin: auto; 
 background: #4287f5;  
-font-size: 12px;  
+font-size: 15px;  
 border: 2px blue;
 cursor: pointer;
 color: white;
-width: inherit;
+width: auto;
+border-radius: 5px;
 }
 .searchbox button:hover {  
 background: blue;  
 }
-input[type=text] {  
-padding: 17px;  
-margin-top: 35px;  
-font-size: 12px;  
-border: 2px #b3bbc7;
-border-width: 2px;
-background-color: #edf0f5;
-width: 50%;
-text-align: center;
-position: relative;
-}  
+.searchbox-feedback {
+    position: absolute;
+    padding-left: 1%;
+    z-index: 2;
+    display: inline-block;
+    width: 30px;
+    height: 70px;
+    line-height: 110px;
+    text-align: center;
+    pointer-events: none;
+    color: #2a5cf5;
+    font-size: 20px;
+}
 .vcat {
     text-align: center;
     padding: 20px;
@@ -202,35 +218,53 @@ h2 {
   position: absolute;
   bottom: 10px;
   right: 45px;
+  color: white;
 }
 </style>
 </head>
 <body>
 
-<header>
-<nav>
-         <div class="ugl">
-                    <li><img src="./Desktop/Images/The connected logo.png" width="40px" height="40px"></li>
-                <li><b>The Connected.</b></a></li>
-            </div>
-            
-            <div class="ugl">
-                <!-- Add font awesome icons -->
-                <div class="fonsiz"><a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>    
-                <a href="#"><i class="fa fa-youtube-play"></i></a> 
-            </div>
-</nav>
- </header>
-  
- <div class="searchbox">
-   <form>
-       <input type="text" placeholder="Nominee name, Nominee number, Nominee category...">
-        <button type="submit">Search</button>
-    </form>
- </div>
+   <nav class="navbar navbar-expand-sm bg-#edf4ff navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img src="The connected logo.png" width="40px" height="40px"
+            class="d-inline-block align-top" alt="">
+           <b>The Connected.</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-youtube-play"></i></a>
+              </li>
+              <li class="nav-item" style="font-size: 17px;">
+                <a class="nav-link" href="create an account.html" style="color: #2a5cf5;">
+                  <b>Create an account</b></a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="searchbox">
+      <form>
+          <input type="text" placeholder="Nominee name, Nominee number, Nominee category...">
+          <button type="submit"><a style="color: white;" href="search.html" >Search</a></button>
+       </form>
+    </div>
 
 <div class="vcat">
  <h1>Voting Category</h1></div>
