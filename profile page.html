@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Connected</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style> 
+    * {
+box-sizing: border-box;
+font-family: Helvetica, Arial, sans-serif;
+}
+body {
+margin: 0;
+font-family: Helvetica, Arial, sans-serif;
+background-color: #edf4ff;
+}
+nav {
+display: flex;
+justify-content: space-between;
+background: #edf4ff;
+padding: 5px;
+color: black;
+}
+nav.item {
+    float: right;
+}
+ul {
+    text-align: center;
+    justify-content: right;
+}
+li {
+    text-decoration: none;
+    color: #000;
+    margin: 0px;
+ }
+ a {
+     text-decoration: none;
+ }
+ .fa {
+ padding: 5px;
+ font-size: 20px;
+ width: 30px;
+ text-align: center;
+ text-decoration: none;
+ margin-right: 15px;
+ color: black;
+ }
+ .fa:hover {
+ opacity: 0.7;
+ }
+ .txt {
+ color: #2a5cf5;
+ }
+ .dropdown-item {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  min-width: 250px;
+}
+.dropdown-item:hover {background-color: lightblue;}
+.dropdown {
+    font-size: 20px;
+}
+/* Style the content */
+.content {
+  padding: 65px;
+  text-align: center;
+  font-size: 35px;
+  color: #3b3f47;
+}
+h3 {
+    padding: 40px;
+}
+input[type=text] {  
+padding: 30px 10px 30px 55px;  
+margin-top: 8px;  
+font-size: 15px;  
+border-style: none;
+border-width: 0px;
+background-color: #d3d9e3;
+width: 60%;
+text-align: left;
+border-radius: 5px;
+}  
+
+.searchbox {
+    text-align: center;
+}
+.searchbox button {   
+padding: 30px;  
+margin: auto; 
+background: #4287f5;  
+font-size: 15px;  
+border: 2px blue;
+cursor: pointer;
+color: white;
+width: auto;
+border-radius: 5px;
+}
+.searchbox button:hover {  
+background: blue;  
+}
+.searchbox-feedback {
+    position: absolute;
+    padding-left: 2%;
+    z-index: 2;
+    display: inline-block;
+    width: 30px;
+    height: 70px;
+    line-height: 90px;
+    text-align: center;
+    pointer-events: none;
+    color: #2a5cf5;
+    font-size: 25px;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-#edf4ff navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand"><img src="The connected logo.png" width="40px" height="40px"
+        class="d-inline-block align-top" alt="">
+       <b>The Connected.</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-linkedin"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-youtube-play"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-bell-o"></i></a>
+          </li>
+        
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" 
+          style="color: #2a5cf5;"><b>Name Surname</b></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="increase voting power.html" style="color: #2a5cf5;">Upgrade Voting Power</a></li>
+            <li><a class="dropdown-item" href="#">Buy Event Ticket</a></li>
+            <li><a class="dropdown-item" href="#">The Ultimate Techie Network</a></li>
+            <li><a class="dropdown-item" href="#">Sign Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="content">
+    <h1>First Ever Tech Personality Award in Nigeria</h1>
+    <h3><a class="txt" href="view all category.html"><b>View all categories</b></a></h3>
+   </div>
+
+   <div class="searchbox">
+    <form>
+      <span class="fa fa-search searchbox-feedback"></span>
+        <input type="text" placeholder="Nominee name, Nominee number, Nominee category...">
+        <button type="submit"><a style="color: white;" href="search.html" >Search</a></button>
+     </form>
+  </div>
+</body>
+</html>
+
+
